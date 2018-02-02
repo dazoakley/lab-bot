@@ -29,7 +29,7 @@ module LabBot
       resp = "Here's the active public channels:\n\n"
 
       Model::Channel.active_public_channels.each do |channel|
-        resp << "##{channel.name}\n"
+        resp << "##{channel.name} \n"
       end
 
       client.say(text: resp, channel: data.channel)
