@@ -1,7 +1,7 @@
 module LabBot
   module Model
-    require 'lab_bot/model/message'
-    require 'lab_bot/model/channel'
-    require 'lab_bot/model/user'
+    autoload :Message, 'lab_bot/model/message'
+    autoload :Channel, 'lab_bot/model/channel'
+    autoload :User, 'lab_bot/model/user'
   end
 end
